@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #content {
+            width: 70%;
+            background-color: rgb(247, 170, 107);
+            margin: auto;
+        }
+
+        .smallboxes {
+            width: 40%;
+            background-color: rgb(253, 206, 119);
+            margin: 10pxs;
+            text-align: center;
+        }
+
+        .bigBox {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        .smallboxes img {
+            width: 100%;
+            object-fit: contain;
+        }
+    </style>
 </head>
+
 <body>
-    hey you
-</body>
+    <div id="content">
+        <h1 style="text-align: center;">My website</h1>
+        <div class="bigBox">
+
+            <div class="smallboxes">
+                <h2>About Me</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio totam quod sint quibusdam laboriosam doloribus, dolorum enim provident! Ab facere tempora sed! Mollitia magnam nemo asperiores, provident assumenda aspernatur aut?
+            </div>
+            <div class="smallboxes">
+                <h2>my Game</h2>
+                <p>Click <a href="game/index.html">here</a>to play my game</p>
+            </div>
+        </div>
+        <div class="bigBox">
+            
+            <div class="smallboxes">
+                <h2>good flan</h2>
+                <img src="img/HowToMakeFlan_77760-1_16x9 (2).jpeg" alt="" style="transform: scale(-1);">
+            </div>
+            <div class="smallboxes">
+                <h2>bad flan</h2>
+                <img src="img/HowToMakeFlan_77760-1_16x9 (2).jpeg" alt="" style="filter: invert(100%);">
+            </div>
+        </div>
+    </div>
+        </body>
+
 </html>
